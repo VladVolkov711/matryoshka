@@ -699,7 +699,7 @@ body {
 .story__button {
 	background-color: #130D4B;
 	color: white;
-	width: 244px;
+	width: 100%;
 	height: 45px;
 	padding: 0px;
 	font-size: 15px;
@@ -928,6 +928,30 @@ body {
     text-align: center;
     font-size: 18px;
 	color: #130D4B;
+}
+
+.inimitable__wrapper {
+	display: grid;
+	grid-template-columns: repeat(3,1fr);
+	grid-gap: 5px;
+	grid-auto-rows: minmax(auto,100px;);
+	margin: auto;
+	width: 57%;
+}
+
+.inimitable__subwrapper {
+	display: grid;
+	grid-template-columns: repeat(1,1fr);
+	grid-gap: 5px;
+}
+
+.inimitable__image-delivery {
+	cursor: pointer;
+	transition: 0.50s;
+}
+
+.inimitable__image-delivery:hover {
+	opacity: 60%;
 }
 
 /*---------------block10----------------*/
@@ -1551,6 +1575,7 @@ body {
 		width: 35px;
 		height: 35px;
 		margin-right: 20px;
+		margin-left: 20px;
 	}
 
 	.stand__img-signature {
@@ -1665,7 +1690,7 @@ body {
 	}
 
 	.secret__text-wood {
-		width: 95%;
+		width: 90%;
 	}
 
 	.secret__red-paragraph-wood {
@@ -1889,7 +1914,10 @@ body {
 	}
 
 	.creation__subtitle-mobile {
-		display: block;
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		width: 80%;
 	}
 
 	.creation__subtitle-text-mobile {
@@ -1909,7 +1937,7 @@ body {
 	}
 
 	.control__text {
-		width: 95%;
+		width: 90%;
 	}
 
 	.control__title {
@@ -2012,7 +2040,7 @@ body {
 
 	.why__sub-info {
 		text-align: center;
-	    width: 100%;
+	    width: 80%;
 	    padding: 0px;
 	}
 
@@ -2041,6 +2069,7 @@ body {
 	    width: 30px;
 	    height: 30px;
 	    margin-right: 20px;
+	    margin-left: 20px;
 	}
 
 	.whu__how-icon-text {
@@ -2186,6 +2215,7 @@ body {
 		width: 30px;
 		height: 30px;
 		margin-right: 20px;
+		margin-left: 20px;
 	}
 
 	.stand__img-signature {
@@ -2519,8 +2549,7 @@ body {
 	}
 
 	.delivery__text {
-	    width: 100%;
-	    height: 640px;
+	    width: 90%;
 	}
 
 	.delivery__title {
